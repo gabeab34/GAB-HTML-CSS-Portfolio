@@ -16,7 +16,18 @@ header {
     text-align: center;
     background-color: darkcyan;
     color: antiquewhite;
+    border-style: double;
+    border-color: midnightblue;
 }
+.MyWork {
+    background-color: coral;
+    padding: 0px;
+    border-style: solid;
+    border-color: antiquewhite;
+    border-radius: 30px;
+    
+}
+
 
 nav {
     position: fixed;
@@ -36,11 +47,29 @@ nav ul li {
     margin-left: 30px;
     
 }
+article {
+    flex: 4 2 100%;
+    background-color: aquamarine;
+    border-style: ridge;
+    border-width: 10px;
+
+}
+article h2, h3, p {
+    text-align: center;
+}
+article img {
+    display: block;
+    max-width: 300px;
+    max-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
 
 main {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 5%;
+    margin-top: 0;
 }
 section {
     padding: 20px;
@@ -51,51 +80,56 @@ section {
 
 
 }
-article img {
-    max-width: 50%;
-    max-height: 50%;
 
-}
 section h2 {
     font-size: 28px;
     color: antiquewhite;
     margin-left: 100px;
 
 }
+
+.bigproject {
+    flex: 4 2 100%;
+    
+    text-align: center;
+    border-style: groove;
+    border-width: 10px;
+
+}
+    
 .project {
-    flex: 1 0 0;
+    flex: 2 1 20%;
     padding: 20px;
     text-align: center;
     border-style: groove;
     border-width: 10px;
 
 }
-.project header {
+.bigproject header {
     padding: 10px;
     background-color: coral;
     color: antiquewhite;
+    border-style: solid;
+    border-color: antiquewhite;
+    border-radius: 30px;
+    
 
 
 }
 
-.project img {
+.bigproject img {
     max-width: 50%;
     max-height: 50%;
 }
-article {
-    flex: 1 0 0;
-    background-color: aquamarine;
-    border-style: ridge;
-    border-width: 10px;
 
-}
-.article p, h2, h3 {
-    text-align: center;
-}
-article img {
-    justify-content: center;
-}
+
 footer {
-    
     background-color: blueviolet;
+    border-style: solid;
+    border-color: goldenrod;
+}
+footer ul li {
+    display: inline-block;
+    padding: 5px;
+    margin: 1px 50px 1px 0;
 }
