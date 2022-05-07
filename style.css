@@ -9,6 +9,7 @@ body {
 }
 
 header {
+    margin-top: 70px;
     padding: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 25px;
@@ -18,16 +19,20 @@ header {
 }
 
 nav {
-
+    position: fixed;
+    top: 0;
+    width: 99.2%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     text-align: center;
     background-color: cornflowerblue;
+    border-style: solid;
+    border-color: darkblue;
     
 }
 nav ul li {
     display: inline-block;
-    padding: 50px;
+    padding: 2px;
     margin-left: 30px;
     
 }
@@ -91,9 +96,6 @@ article img {
     justify-content: center;
 }
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    
     background-color: blueviolet;
 }
