@@ -18,11 +18,7 @@ header {
 }
 
 nav {
-    /* position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    margin-right: 50px; */
+
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     text-align: center;
@@ -36,6 +32,11 @@ nav ul li {
     
 }
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
 section {
     padding: 20px;
     float:left;
@@ -45,7 +46,7 @@ section {
 
 
 }
-section img {
+article img {
     max-width: 50%;
     max-height: 50%;
 
@@ -54,10 +55,40 @@ section h2 {
     font-size: 28px;
     color: antiquewhite;
     margin-left: 100px;
+
+}
+.project {
+    flex: 1 0 0;
+    padding: 20px;
+    text-align: center;
+    border-style: groove;
+    border-width: 10px;
+
+}
+.project header {
+    padding: 10px;
+    background-color: coral;
+    color: antiquewhite;
+
+
+}
+
+.project img {
+    max-width: 50%;
+    max-height: 50%;
 }
 article {
+    flex: 1 0 0;
     background-color: aquamarine;
+    border-style: ridge;
+    border-width: 10px;
 
+}
+.article p, h2, h3 {
+    text-align: center;
+}
+article img {
+    justify-content: center;
 }
 footer {
     position: fixed;
