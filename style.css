@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    padding: 2;
+    margin: 2;
+}
+
+body {
+    background-color: aqua;
+}
+
+header {
+    padding: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    text-align: center;
+    background-color: darkcyan;
+    color: antiquewhite;
+}
+
+nav {
+    float: right;
+    margin-right: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    
+}
+.nav ul {
+    display: inline-block;
+    margin-left: 30px
+}
