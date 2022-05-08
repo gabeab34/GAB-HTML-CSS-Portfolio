@@ -89,8 +89,7 @@ section h2 {
 }
 
 .bigproject {
-    flex: 4 2 100%;
-    
+    flex: 1 0 100%;
     text-align: center;
     border-style: groove;
     border-width: 10px;
@@ -98,11 +97,14 @@ section h2 {
 }
     
 .project {
-    flex: 2 1 20%;
+    flex: 1 0 50%;
+    flex-wrap: wrap;
     padding: 20px;
     text-align: center;
     border-style: groove;
     border-width: 10px;
+    
+    
 
 }
 .bigproject header {
@@ -132,4 +134,21 @@ footer ul li {
     display: inline-block;
     padding: 5px;
     margin: 1px 50px 1px 0;
+}
+
+@media screen and (max-width: 1000px) {
+    .bigproject {
+        background: darkblue;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .project {
+        flex: 3 2 100%;
+        background: darkblue;
+        color: antiquewhite;
+    }
+
+    
 }
