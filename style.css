@@ -4,6 +4,13 @@
     margin: 2;
 }
 
+:root {
+    --white: antiquewhite;
+    --darkblue: midnightblue;
+    --orange: coral; 
+
+}
+
 body {
     background-color: aqua;
 }
@@ -15,18 +22,11 @@ header {
     font-size: 25px;
     text-align: center;
     background-color: darkcyan;
-    color: antiquewhite;
+    color: var(--white);
     border-style: double;
-    border-color: midnightblue;
+    border-color: var(--darkblue);
 }
-.MyWork {
-    background-color: coral;
-    padding: 0px;
-    border-style: solid;
-    border-color: antiquewhite;
-    border-radius: 30px;
-    
-}
+
 
 
 nav {
@@ -38,7 +38,7 @@ nav {
     text-align: center;
     background-color: cornflowerblue;
     border-style: solid;
-    border-color: darkblue;
+    border-color: var(--darkblue);
     
 }
 nav ul li {
@@ -48,24 +48,52 @@ nav ul li {
     
 }
 article {
-    flex: 4 2 100%;
+    display: flex;
+    align-items: center;
+    float: left;
     background-color: aquamarine;
+    width: 50%;
+    height: 200px;
     border-style: ridge;
     border-width: 10px;
+    
 
 }
-article h2, h3, p {
-    text-align: center;
+article h2 {
+    font-size: 20px;
+    
 }
 article img {
-    display: block;
-    max-width: 300px;
-    max-height: 300px;
-    margin-left: auto;
-    margin-right: auto;
+    flex: 1 0 50%;
+    justify-content: right;
+    padding: 10px;
+
+    max-width: 200px;
+    max-height: 200px;
+    
+    
     
 }
 
+aside {
+    flex: 1 0 100%;
+    width: 50%;
+    height: 200px;
+    float: right;
+    border-style: ridge;
+    border-width: 10px;
+    background-color: aquamarine;
+    text-align: center;
+}
+.MyWork {
+    margin-top: 200px;
+    background-color: blueviolet;
+    padding: 20px;
+    border-style: solid;
+    border-color: goldenrod;
+    border-radius: 30px;
+    
+}
 main {
     display: flex;
     flex-wrap: wrap;
@@ -83,7 +111,7 @@ section {
 
 section h2 {
     font-size: 28px;
-    color: antiquewhite;
+    color: var(--white);
     margin-left: 100px;
 
 }
@@ -96,23 +124,13 @@ section h2 {
 
 }
     
-.project {
-    flex: 1 0 50%;
-    flex-wrap: wrap;
-    padding: 20px;
-    text-align: center;
-    border-style: groove;
-    border-width: 10px;
-    
-    
 
-}
 .bigproject header {
     padding: 10px;
-    background-color: coral;
-    color: antiquewhite;
+    background-color: var(--orange);
+    color: var(--white);
     border-style: solid;
-    border-color: antiquewhite;
+    border-color: var(--white);
     border-radius: 30px;
     
 
@@ -120,8 +138,34 @@ section h2 {
 }
 
 .bigproject img {
+    max-width: 75%;
+    max-height: 75%;
+    
+}
+
+.project {
+    flex: 1 0 50%;
+    flex-wrap: wrap;
+    padding: 20px;
+    text-align: center;
+    border-style: groove;
+    border-width: 10px;
+    }
+
+.project h5 {
+    padding: 10px;
+    background-color: var(--orange);
+    color: var(--white);
+    border-style: solid;
+    border-color: var(--white);
+    border-radius: 30px;
+    
+
+}
+.project img {
     max-width: 50%;
     max-height: 50%;
+
 }
 
 
@@ -138,16 +182,21 @@ footer ul li {
 
 @media screen and (max-width: 1000px) {
     .bigproject {
-        background: darkblue;
+        max-width: 200%;
+        max-height: 200%;
+        background: var(--darkblue);
     }
     
 }
 
 @media screen and (max-width: 600px) {
     .project {
+        
         flex: 3 2 100%;
-        background: darkblue;
-        color: antiquewhite;
+        
+        max-height: fit-content;
+        background: var(--darkblue);
+        color: var(--white);
     }
 
     
