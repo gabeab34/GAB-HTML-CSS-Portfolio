@@ -12,7 +12,7 @@
 }
 
 body {
-    background-color: aqua;
+    background-color: grey;
 }
 
 header {
@@ -23,8 +23,8 @@ header {
     text-align: center;
     background-color: darkcyan;
     color: var(--white);
-    border-style: double;
-    border-color: var(--darkblue);
+    border-style: ridge;
+    border-width: 10px;
 }
 
 
@@ -43,19 +43,21 @@ nav {
 }
 nav ul li {
     display: inline-block;
-    padding: 2px;
+    padding: 0px;
     margin-left: 30px;
+    margin-right: 30px;
     
 }
 article {
     display: flex;
     align-items: center;
     float: left;
-    background-color: aquamarine;
+    background-color: var(--darkblue);
     width: 50%;
     height: 200px;
     border-style: ridge;
     border-width: 10px;
+    color: var(--white);
     
 
 }
@@ -66,25 +68,38 @@ article h2 {
 article img {
     flex: 1 0 50%;
     justify-content: right;
-    padding: 10px;
-
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 150px;
+    max-height: 180px;
+    border-style: ridge;
+    border-width: 5px;
+    
+    
     
     
     
 }
 
 aside {
-    flex: 1 0 100%;
     width: 50%;
     height: 200px;
     float: right;
     border-style: ridge;
     border-width: 10px;
-    background-color: aquamarine;
+    background-color: var(--darkblue);
     text-align: center;
+    color: var(--white);
+
+    
+    
 }
+aside p {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 30px;
+
+}
+
 .MyWork {
     margin-top: 200px;
     background-color: blueviolet;
@@ -140,6 +155,9 @@ section h2 {
 .bigproject img {
     max-width: 75%;
     max-height: 75%;
+    border-style: solid;
+    border-color: var(--white);
+    border-width: 10px;
     
 }
 
@@ -165,6 +183,8 @@ section h2 {
 .project img {
     max-width: 50%;
     max-height: 50%;
+    border-style: solid;
+    border-color: var(--white);
 
 }
 
@@ -173,10 +193,13 @@ footer {
     background-color: blueviolet;
     border-style: solid;
     border-color: goldenrod;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
 }
 footer ul li {
     display: inline-block;
-    padding: 5px;
+    padding: 2px;
     margin: 1px 50px 1px 0;
 }
 
