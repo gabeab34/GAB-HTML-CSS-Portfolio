@@ -4,4 +4,4 @@ In this project I coded a portfolio page from scratch. I used flexbox functional
 
 ![Challenge 2](assets/images/Screenshot-of-challenge-2.png "My screenshot")
 
-<a href="https://gabeab34.github.io/GAB-Challenge-2/" alt="my webpage">My webpage
+<a href="https://gabeab34.github.io/GAB-challenge-2/" alt="my webpage">My webpage
