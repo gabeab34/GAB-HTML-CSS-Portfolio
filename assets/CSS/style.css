@@ -168,6 +168,8 @@ section h2 {
     text-align: center;
     border-style: groove;
     border-width: 10px;
+    height: auto;
+    
     }
 
 .project h5 {
