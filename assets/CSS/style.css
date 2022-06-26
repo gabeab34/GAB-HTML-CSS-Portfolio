@@ -11,8 +11,25 @@
 
 }
 
+
+
+a:link {
+ color: var(--white);
+}
+
+a:visited {
+ color: violet;
+}
+
+
+
+a:hover {
+ color: goldenrod;
+}
+
+
 body {
-    background-color: grey;
+    background-color: black;
 }
 
 header {
@@ -25,6 +42,7 @@ header {
     color: var(--white);
     border-style: ridge;
     border-width: 10px;
+    background-image: url(../Images/orange.jpg);
 }
 
 
@@ -36,12 +54,14 @@ nav {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     text-align: center;
-    background-color: cornflowerblue;
+    background-color: var(--darkblue);
     border-style: solid;
-    border-color: var(--darkblue);
+    border-radius: 45px;
+    border-color: var(--white);
     
 }
 nav ul li {
+    color: var(--white);
     display: inline-block;
     padding: 0px;
     margin-left: 30px;
@@ -58,11 +78,14 @@ article {
     border-style: ridge;
     border-width: 10px;
     color: var(--white);
+    background-image: url(../Images/space.jpg);
     
 
 }
 article h2 {
-    font-size: 20px;
+    font-size: 50px;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 article img {
@@ -72,6 +95,7 @@ article img {
     max-height: 180px;
     border-style: ridge;
     border-width: 5px;
+    margin-left: auto;
     
     
     
@@ -88,6 +112,7 @@ aside {
     background-color: var(--darkblue);
     text-align: center;
     color: var(--white);
+    background-image: url(../Images/space.jpg);
 
     
     
@@ -102,11 +127,12 @@ aside p {
 
 .MyWork {
     margin-top: 200px;
-    background-color: blueviolet;
     padding: 20px;
     border-style: solid;
-    border-color: goldenrod;
-    border-radius: 30px;
+    border-color: var(--white);
+    border-radius: 45px;
+    border-width: 5px;
+    background-image: url(../Images/orange.jpg);
     
 }
 main {
@@ -136,6 +162,7 @@ section h2 {
     text-align: center;
     border-style: groove;
     border-width: 10px;
+    background-image: url(../Images/space.jpg);
 
 }
     
@@ -146,7 +173,9 @@ section h2 {
     color: var(--white);
     border-style: solid;
     border-color: var(--white);
-    border-radius: 30px;
+    border-width: 5px;
+    border-radius: 45px;
+    background-image: url(../Images/orange.jpg);
     
 
 
@@ -157,7 +186,8 @@ section h2 {
     max-height: 75%;
     border-style: solid;
     border-color: var(--white);
-    border-width: 10px;
+    border-width: 5px;
+    border-radius: 10px;
     
 }
 
@@ -192,9 +222,11 @@ section h2 {
 
 
 footer {
-    background-color: blueviolet;
+    color: var(--white);
+    background-color: var(--darkblue);
     border-style: solid;
-    border-color: goldenrod;
+    border-color: var(--white);
+    border-radius: 90px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
     text-align: center;
